@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand/v2"
 
+	"github.com/utescu/generadorscatalans/oficis"
 	"github.com/utescu/generadorscatalans/persones"
 	"github.com/utescu/generadorscatalans/pobles"
 )
@@ -30,4 +31,9 @@ func main() {
 
 	fmt.Println("--------------")
 	fmt.Println(persones.GeneraNom(persones.Home))
+
+	fmt.Println("--------------")
+	for i:= range 10 {
+		fmt.Println(i, oficis.GeneraOfici())
+	}
 }

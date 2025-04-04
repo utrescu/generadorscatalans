@@ -2,6 +2,10 @@
 
 Mòduls en llenguatge GO per generar de forma aleatòria tant noms de pobles com noms de persones
 
+També pot generar un ofici aleatòri per la persona que s'ha creat
+
+Els faig servir per preparar pràctiques de Bases de dades o APIS. Els generadors em permeten omplir automàticament grans quantitats de dades que poden semblar reals.
+
 ## persones
 
 Pot generar noms aleatoris de persones amb cognoms o no.
@@ -87,6 +91,31 @@ Imprimirà per pantalla una llista com aquesta: (cada cop serà diferent)
 ```
 
 Que surti un nom de poble real és pura casualitat.
+
+### Oficis
+
+Generador d'oficis de forma aleatòria
+
+```golang
+for i:= range 10 {
+    fmt.Println(i, oficis.GeneraOfici())
+}
+```
+
+Dóna una cosa com aquesta:
+
+```log
+0 Paleta
+1 Físic
+2 Locutor
+3 Transportista
+4 Picapedrer
+5 Carboner
+6 Actor
+7 Economista
+8 Intel·lectual
+9 Flequer
+```
 
 ## TODO
 
