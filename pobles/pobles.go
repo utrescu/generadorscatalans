@@ -4,7 +4,7 @@ import (
 	"math/rand/v2"
 	"strings"
 
-	"github.com/utescu/generadorscatalans/persones"
+	"github.com/utrescu/generadorscatalans/persones"
 )
 
 const PROVABILITATDEPOSTNOM = 75
