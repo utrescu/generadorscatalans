@@ -4,11 +4,14 @@ import "math/rand/v2"
 
 var homes = []string{
 	"Pere", "Manel", "Marti", "Joan", "Pep", "Toni", "Sam", "Lluis", "Cesc", "Joan", "Josep", "Frederic", "Filomenu",
-	"Enric", "Jou", "Bernat", "Francesc", "Paco", "Zeus", "Miquel", "Joan Josep",
+	"Enric", "Jou", "Bernat", "Francesc", "Paco", "Zeus", "Miquel", "Joan Josep", "Joan Pau", "Jordi", "Josep Maria",
+	"Josep Antoni", "Josep Manel", "Josep Lluís", "Francesc Xavier", "Francesc Joan", "Tomàs", "Felip", 
 	"Met", "Homer", "Ot", "Iu", "Max", "Pol", "Pitu", "Jean", "Òscar", "Jesus", "Alfons",
 	"Sergi", "David", "Daniel", "Josep Antoni", "Joanot", "Cristian", "Diego", "Didac", "Rufo", "Quim", "Joaquim", "Xavier",
 	"Baldiri", "Víctor", "Ernest", "Carles", "Charly", "Gerard", "Alfred", "Damià", "Robert", "Ernest",
-	"Yander", "Rubén",
+	"Yander", "Rubén", "Serafí", "Arnau", "Baltasar", "Salvador", "Salvi", "Guiraut", "Perot", "Perico", "Pere Joan",
+	"Ramon", "Ramonet", "Roger", "Sagimon", "Simon", "Tomas", "Vicens", "Sidru", "Isidre", "Segimon", "Sergi", "Sergi Joan",
+	"Silvestre", "Simeó", "Simeó Joan", "Simeó Joanet", "Simeó Joanet Joan", "Simeó Joanet Joanet",
 }
 
 var dones = []string{
@@ -43,7 +46,9 @@ var cognoms = []string{
 	"Pellicer", "Palomera", "Palop", "Paraire", "Páramo", "Paradís", "Parer", "Paret", "Parra",
 	"Pascal", "Pastoret", "Paula", "Pedreño", "Pedrol", "Pelayo", "Pelegrí", "Peret", "Pericas", "Pesarrodona", "Petit", "Petrus",
 	"Rey", "Pey", "Pinyas", "Piñol", "Brunyol", "Picanyol", "Pia", "Rubio", "Piferrer", "Pijoan", "Pinot", "Piqueras",
-	"Platja", "Pont", "Vinals", "Visent", "Viu", "Reig",
+	"Platja", "Pont", "Vinals", "Visent", "Viu", "Reig", "Magrit", "Pons", "Pujades", "Pujol", "Puig", "Puigdemont", "Puigmal",
+	"Puigvert", "Puigventós", "Puigverd", "Pujolà", "Pujolar", "Pujolras", "Palmerola", "Queralt", "Quintana", "Quintanilla",
+
 }
 
 
