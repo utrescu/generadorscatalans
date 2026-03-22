@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"math/rand/v2"
 
+	"github.com/utrescu/generadorscatalans/dni"
 	"github.com/utrescu/generadorscatalans/oficis"
 	"github.com/utrescu/generadorscatalans/persones"
-	"github.com/utrescu/generadorscatalans/pobles"
 	"github.com/utrescu/generadorscatalans/pirates"
+	"github.com/utrescu/generadorscatalans/pobles"
 )
 
 func main() {
@@ -49,5 +50,12 @@ func main() {
 		fmt.Println(i, pirates.GenerarNomDePirata())
 	}
 	fmt.Println("--------------------")
-	
+	fmt.Println("Genera 10 DNI aleatoris")
+	fmt.Println("--------------------")
+
+	for range 10 {
+		fmt.Println(dni.GeneraDNI())
+	}
+	fmt.Println("--------------------")
+
 }

@@ -20,9 +20,9 @@ fmt.Println(persones.GeneraNom(persones.Home))
 
 ### GeneraCognom()
 
-Retorna un cognom aleatòri 
+Retorna un cognom aleatòri
 
-```
+```golang
 fmt.Println(persones.GeneraCognom())
 ```
 
@@ -61,7 +61,7 @@ Genera una llista de persones:
 
 ## pobles
 
-El mòdul genera un nom de poble inventat de forma aleatòria. 
+El mòdul genera un nom de poble inventat de forma aleatòria.
 
 ### GeneraNomDePoble()
 
@@ -69,9 +69,9 @@ Crea un nom de poble a partir d'un patró semblant al que s'ha fet servir per do
 
 Per exemple aquest codi:
 
-```
+```golang
 for i := range 10 {
-	fmt.Println(i, pobles.GeneraNomDePoble())
+    fmt.Println(i, pobles.GeneraNomDePoble())
 }
 ```
 
@@ -115,6 +115,46 @@ Dóna una cosa com aquesta:
 7 Economista
 8 Intel·lectual
 9 Flequer
+```
+
+### DNI
+
+Estictament parlant no hauria d'estar aquí, però com que sovint fa falta per 
+generar dades l'hi poso
+
+Generador de DNIs espanyols aleatoris amb la lletra de control calculada correctament.
+
+### GeneraDNI()
+
+Retorna un DNI en format de 8 xifres i lletra final.
+
+```golang
+for i := range 10 {
+    fmt.Println(i, dni.GeneraDNI())
+}
+```
+
+Pot donar una sortida com aquesta:
+
+```log
+0 48392015H
+1 00038142T
+2 92745011K
+3 15420098M
+```
+
+### FormatDNI(numero int)
+
+Construeix el DNI a partir d'un número concret, afegint zeros a l'esquerra si cal i calculant-ne la lletra.
+
+```golang
+fmt.Println(dni.FormatDNI(12345678))
+```
+
+Imprimeix:
+
+```log
+12345678Z
 ```
 
 ## TODO
