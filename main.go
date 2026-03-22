@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand/v2"
 
+	"github.com/utrescu/generadorscatalans/adreces"
 	"github.com/utrescu/generadorscatalans/dni"
 	"github.com/utrescu/generadorscatalans/oficis"
 	"github.com/utrescu/generadorscatalans/persones"
@@ -55,6 +56,14 @@ func main() {
 
 	for range 10 {
 		fmt.Println(dni.GeneraDNI())
+	}
+	fmt.Println("--------------------")
+	fmt.Println("Genera 10 adreces ficticies")
+	fmt.Println("--------------------")
+
+	for i := range 10 {
+		a := adreces.GeneraAdrecaAleatoria()
+		fmt.Println(i, "[", a.Tipus, "]", a.String())
 	}
 	fmt.Println("--------------------")
 

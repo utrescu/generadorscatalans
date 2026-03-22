@@ -119,7 +119,7 @@ Dóna una cosa com aquesta:
 
 ### DNI
 
-Estictament parlant no hauria d'estar aquí, però com que sovint fa falta per 
+Estictament parlant no hauria d'estar aquí, però com que sovint fa falta per
 generar dades l'hi poso
 
 Generador de DNIs espanyols aleatoris amb la lletra de control calculada correctament.
@@ -155,6 +155,44 @@ Imprimeix:
 
 ```log
 12345678Z
+```
+
+## adreces
+
+Generador d'adreces ficticies a partir d'arrays de paraules, seguint un patró similar al generador de pobles.
+
+Inclou els tipus de via: Carrer, Avinguda, Placa, Carretera, Ronda, Passeig, Travessera i Cami.
+
+La direccio guarda si fa referencia a una `Casa` o a un `Pis`.
+
+### GeneraAdreca(t TipusAdreca)
+
+Genera una adreca del tipus indicat.
+
+```golang
+casa := adreces.GeneraAdreca(adreces.Casa)
+pis := adreces.GeneraAdreca(adreces.Pis)
+
+fmt.Println(casa.Tipus, casa.String())
+fmt.Println(pis.Tipus, pis.String())
+```
+
+Possible sortida:
+
+```log
+Casa Carrer de la Font, 32
+Pis Avinguda del Mar, 7, 3 B
+```
+
+### GeneraAdrecaAleatoria()
+
+Genera una adreca aleatoria de casa o de pis.
+
+```golang
+for i := range 10 {
+    adreca := adreces.GeneraAdrecaAleatoria()
+    fmt.Println(i, adreca.Tipus, adreca.String())
+}
 ```
 
 ## TODO
