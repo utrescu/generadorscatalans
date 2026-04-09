@@ -46,10 +46,13 @@ func GeneraNomDePoble() string {
 		nom = adjectius[rand.IntN(len(adjectius))]
 	}
 
-	if rand.IntN(100) < PROVABILITATDEPOSTNOM {
-		return preNom + nom + " " + postname[rand.IntN(len(postname))]
+	nomTemporal := preNom + nom;
+	if strings.HasSuffix(preNom, "ll") && strings.HasPrefix(nom, "ll") {
+		nomTemporal = preNom + "-" + nom;
 	}
 
-	return preNom + nom
-
+	if rand.IntN(100) < PROVABILITATDEPOSTNOM {
+		return nomTemporal + " " + postname[rand.IntN(len(postname))]
+	}
+	return nomTemporal 
 }
