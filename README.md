@@ -79,7 +79,7 @@ Imprimirà per pantalla una llista com aquesta: (cada cop serà diferent)
 
 ```log
 0 Santa Marta de la Font
-1 Bellllargaruda de l'Església
+1 Bell-llargaruda de l'Església
 2 Santa Pilar del Punt
 3 Bellescatosa
 4 Sant Jou del Matoll
